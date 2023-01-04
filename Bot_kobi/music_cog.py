@@ -179,8 +179,8 @@ class music_cog(commands.Cog):
 
             if 'open.spotify' in query:
                 spotify = spotipy.Spotify(
-                    client_credentials_manager=SpotifyClientCredentials(client_id='c1e707526eef48a8afdea05e0512f3c2',
-                                                                        client_secret='76be2761fc4d4a18900e616b9606a5c3'))
+                    client_credentials_manager=SpotifyClientCredentials(client_id='',
+                                                                        client_secret=''))
                 string = query.replace('/', ' ')
                 link = string.split()
                 print(link)
